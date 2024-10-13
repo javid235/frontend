@@ -64,7 +64,7 @@ const Navbar = () => {
             closeMenu()
           }}
         >
-          <Link style={{ textDecoration: 'none', color: '#626262' }} to='/mens'>
+          <Link style={{ textDecoration: 'none', color: '#626262' }} to='/frontend/mens'>
             Men
           </Link>
           {menu === 'mens' ? <hr /> : null}
@@ -76,8 +76,7 @@ const Navbar = () => {
           }}
         >
           <Link
-            style={{ textDecoration: 'none', color: '#626262' }}
-            to='/womens'
+            style={{ textDecoration: 'none', color: '#626262' }} to='/frontend/womens'
           >
             Women
           </Link>
@@ -89,17 +88,17 @@ const Navbar = () => {
             closeMenu()
           }}
         >
-          <Link style={{ textDecoration: 'none', color: '#626262' }} to='/kids'>
+          <Link style={{ textDecoration: 'none', color: '#626262' }} to='/frontend/kids'>
             Kids
           </Link>
           {menu === 'kids' ? <hr /> : null}
         </li>
       </ul>
       <div className='nav-login-cart'>
-        <Link style={{ textDecoration: 'none' }} to='/login'>
+        <Link style={{ textDecoration: 'none' }} to='/frontend/login'>
           <button>Login</button>
         </Link>
-        <Link style={{ textDecoration: 'none' }} to='/cart'>
+        <Link style={{ textDecoration: 'none' }} to='/frontend/cart'>
           <img src={cart_icon} alt='' />
         </Link>
         <div className='nav-cart-count'>{getTotalCartItems()}</div>
