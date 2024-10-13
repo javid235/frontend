@@ -33,7 +33,7 @@ const Navbar = () => {
             alignItems: 'center',
             gap: '10px',
           }}
-          to='/'
+          to='/frontend'
         >
           <img src={logo} alt='' />
           <p>SHOPPER</p>
@@ -53,7 +53,7 @@ const Navbar = () => {
             closeMenu()
           }}
         >
-          <Link style={{ textDecoration: 'none', color: '#626262' }} to='/'>
+          <Link style={{ textDecoration: 'none', color: '#626262' }} to='/frontend'>
             Shop
           </Link>
           {menu === 'shop' ? <hr /> : null}
